@@ -3,115 +3,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio Profesional - Sebastian</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <title>Curriculum Profesional - Sebastian Castro</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; }
 
-    header { padding: 60px 20px; text-align: center; background: #161b22; }
-    h1 { font-size: 3rem; color: #58a6ff; }
-    h2 { margin-bottom: 20px; }
-    p { opacity: 0.8; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #eef1f7;
+      color: #1d1d1d;
+      line-height: 1.7;
+    }
 
-    nav { background: #21262d; padding: 15px; text-align: center; position: sticky; top: 0; }
-    nav a { color: #e6edf3; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    nav a:hover { color: #58a6ff; }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+    }
 
-    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h1, h2, h3 { color: #123b89; }
 
-    .proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-    .card { background: #161b22; padding: 20px; border-radius: 12px; border: 1px solid #30363d; transition: 0.3s; }
-    .card:hover { transform: translateY(-5px); border-color: #58a6ff; }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
 
-    footer { text-align: center; padding: 40px; background: #161b22; margin-top: 40px; }
+    h2 {
+      margin-top: 35px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      border-left: 5px solid #123b89;
+      padding-left: 10px;
+    }
+
+    p { margin-bottom: 15px; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #123b89;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover { background: #0d2a63; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8f9fc;
+      padding: 20px;
+      border-left: 6px solid #123b89;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #123b89;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre">Información</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
 
-  <header id="inicio">
-    <h1>Sebastian</h1>
-    <p>Desarrollador Fullstack | Estudiante </p>
+<div class="container">
+
+  <!-- FOTO -->
+  <div style="text-align:center; margin-bottom:20px;">
+    <img 
+      src="https://aplicaciones.utc.edu.ec/sigutc/Reserved.ReportViewerWebControl.axd?Culture=12298&CultureOverrides=True&UICulture=3082&UICultureOverrides=True&ReportStack=1&ControlID=9dffc27aed8340638a019b47bf747080&Mode=true&OpType=ReportImage&IterationId=f46e5686f0364d409b3e1b65a9e68d48&StreamID=4b6af6bc522d4acd84103fdba78df54b"
+      alt="Foto de Sebastian Castro"
+      style="width:160px; height:160px; border-radius:50%; object-fit:cover; border:4px solid #123b89; box-shadow:0 4px 12px rgba(0,0,0,0.2);"
+    />
+  </div>
+
+  <!-- HEADER -->
+  <header style="text-align:center;">
+    <h1>Sebastian Castro</h1>
+    <p>Desarrollador Fullstack | Estudiante Universitario</p>
+
+    <a class="btn" href="https://www.linkedin.com/in/tu-linkedin-aqui" target="_blank">
+      Ver mi LinkedIn
+    </a>
   </header>
 
-  <section id="sobre">
-    <h2>Información</h2>
+  <!-- PERFIL -->
+  <section>
+    <h2>Perfil Profesional</h2>
     <p>
-      Hola, soy Sebastian, desarrollador apasionado por la tecnología, la programación 
-      y la creación de soluciones innovadoras. Trabajo en proyectos web.
-    
+      Soy Sebastian Castro, desarrollador apasionado por crear soluciones tecnológicas útiles y escalables.
+      Tengo experiencia en Laravel, Django, .NET y desarrollo web moderno. Me gusta aprender, mejorar
+      y aplicar la tecnología en proyectos reales que aporten valor a las personas.
     </p>
   </section>
 
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="proyectos">
+  <!-- HABILIDADES -->
+  <section>
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li><strong>Lenguajes:</strong> PHP, Python, C#, JavaScript</li>
+      <li><strong>Frameworks:</strong> Laravel, Django, ASP.NET</li>
+      <li><strong>Bases de datos:</strong> MySQL, PostgreSQL</li>
+      <li><strong>Herramientas:</strong> Git, Docker, Trello, VS Code</li>
+      <li><strong>Otros:</strong> APIs REST, metodologías ágiles, UI básica</li>
+    </ul>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section>
+    <h2>Proyectos Destacados</h2>
+
+    <div class="projects-grid">
+
       <div class="card">
         <h3>Punto Turístico (Laravel)</h3>
-        <p>Proyecto web para gestionar puntos turísticos.</p>
+        <p>Gestión de lugares turísticos con panel administrativo.</p>
         <a href="https://gitlab.com/sebas66-group/puntoturistico" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
         <h3>Zonas de Riesgo (Laravel)</h3>
-        <p>Sistema para registrar y visualizar zonas de riesgo con mapas.</p>
-        <a href="https://gitlab.com/sebas66-group/proyectozonas/-/tree/master?ref_type=heads" target="_blank">Ver repositorio</a>
+        <p>Registro de zonas peligrosas usando mapas interactivos.</p>
+        <a href="https://gitlab.com/sebas66-group/proyectozonas" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
         <h3>Reservas de Zoológico (Django)</h3>
-        <p>Aplicación para gestionar reservas y visitantes de un zoológico.</p>
+        <p>Sistema para control de reservas y visitantes.</p>
         <a href="https://gitlab.com/sebas66-group/proyectoreservas" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
         <h3>Fichas Socioeconómicas (Django)</h3>
-        <p>Proyecto no finalizado para gestionar fichas de adultos mayores.</p>
-        <a href="https://gitlab.com/sebas66-group/proyectofichas/-/tree/master?ref_type=heads" target="_blank">Ver repositorio</a>
+        <p>Proyecto para el registro de adultos mayores.</p>
+        <a href="https://gitlab.com/sebas66-group/proyectofichas" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
         <h3>Registro de Deportistas (Laravel)</h3>
-        <p>Sistema para administrar información de deportistas.</p>
+        <p>CRUD completo para deportistas.</p>
         <a href="https://gitlab.com/sebas66-group/proyectodeportistas" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
         <h3>Productos Tecnológicos (.NET)</h3>
-        <p>Aplicación para la gestión y venta de productos tecnológicos.</p>
+        <p>Sistema de venta y administración de productos.</p>
         <a href="https://gitlab.com/sebas66-group/cursostecnologia" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
         <h3>Clínica de Terapias (Django)</h3>
-        <p>Sistema para agendar y gestionar terapias clínicas.</p>
+        <p>Agenda para terapias clínicas.</p>
         <a href="https://gitlab.com/sebas66-group/clinicaterapias" target="_blank">Ver repositorio</a>
       </div>
 
       <div class="card">
         <h3>Adopción de Mascotas (Laravel)</h3>
-        <p>Plataforma para publicar y adoptar mascotas.</p>
-        <a href="https://gitlab.com/sebas66-group/adopcionmascotas/-/tree/master?ref_type=heads" target="_blank">Ver repositorio</a>
+        <p>Plataforma para adopción responsable.</p>
+        <a href="https://gitlab.com/sebas66-group/adopcionmascotas" target="_blank">Ver repositorio</a>
       </div>
-    </div>
+
     </div>
   </section>
 
-  <section id="contacto">
+  <!-- EDUCACIÓN -->
+  <section>
+    <h2>Educación</h2>
+    <p><strong>Universidad Técnica de Cotopaxi</strong> — Ingeniería en Sistemas  
+    <br>2021 - Actualidad</p>
+  </section>
+
+  <!-- CONTACTO -->
+  <section>
     <h2>Contacto</h2>
     <p><strong>Email:</strong> jonathan.castro3598@utc.edu.ec</p>
   </section>
 
-  <footer>
-    <p>© 2025 Sebastian - Portafolio </p>
-  </footer>
+</div>
+
+<footer>
+  © 2025 Sebastian Castro — Curriculum Profesional
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional - Sebastian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; }
+
+    header { padding: 60px 20px; text-align: center; background: #161b22; }
+    h1 { font-size: 3rem; color: #58a6ff; }
+    h2 { margin-bottom: 20px; }
+    p { opacity: 0.8; }
+
+    nav { background: #21262d; padding: 15px; text-align: center; position: sticky; top: 0; }
+    nav a { color: #e6edf3; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #58a6ff; }
+
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+
+    .proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .card { background: #161b22; padding: 20px; border-radius: 12px; border: 1px solid #30363d; transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); border-color: #58a6ff; }
+
+    footer { text-align: center; padding: 40px; background: #161b22; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Información</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <header id="inicio">
+    <h1>Sebastian</h1>
+    <p>Desarrollador Fullstack | Estudiante </p>
+  </header>
+
+  <section id="sobre">
+    <h2>Información</h2>
+    <p>
+      Hola, soy Sebastian, desarrollador apasionado por la tecnología, la programación 
+      y la creación de soluciones innovadoras. Trabajo en proyectos web.
+    
+    </p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyectos">
+      <div class="card">
+        <h3>Punto Turístico (Laravel)</h3>
+        <p>Proyecto web para gestionar puntos turísticos.</p>
+        <a href="https://gitlab.com/sebas66-group/puntoturistico" target="_blank">Ver repositorio</a>
+      </div>
+
+      <div class="card">
+        <h3>Zonas de Riesgo (Laravel)</h3>
+        <p>Sistema para registrar y visualizar zonas de riesgo con mapas.</p>
+        <a href="https://gitlab.com/sebas66-group/proyectozonas/-/tree/master?ref_type=heads" target="_blank">Ver repositorio</a>
+      </div>
+
+      <div class="card">
+        <h3>Reservas de Zoológico (Django)</h3>
+        <p>Aplicación para gestionar reservas y visitantes de un zoológico.</p>
+        <a href="https://gitlab.com/sebas66-group/proyectoreservas" target="_blank">Ver repositorio</a>
+      </div>
+
+      <div class="card">
+        <h3>Fichas Socioeconómicas (Django)</h3>
+        <p>Proyecto no finalizado para gestionar fichas de adultos mayores.</p>
+        <a href="https://gitlab.com/sebas66-group/proyectofichas/-/tree/master?ref_type=heads" target="_blank">Ver repositorio</a>
+      </div>
+
+      <div class="card">
+        <h3>Registro de Deportistas (Laravel)</h3>
+        <p>Sistema para administrar información de deportistas.</p>
+        <a href="https://gitlab.com/sebas66-group/proyectodeportistas" target="_blank">Ver repositorio</a>
+      </div>
+
+      <div class="card">
+        <h3>Productos Tecnológicos (.NET)</h3>
+        <p>Aplicación para la gestión y venta de productos tecnológicos.</p>
+        <a href="https://gitlab.com/sebas66-group/cursostecnologia" target="_blank">Ver repositorio</a>
+      </div>
+
+      <div class="card">
+        <h3>Clínica de Terapias (Django)</h3>
+        <p>Sistema para agendar y gestionar terapias clínicas.</p>
+        <a href="https://gitlab.com/sebas66-group/clinicaterapias" target="_blank">Ver repositorio</a>
+      </div>
+
+      <div class="card">
+        <h3>Adopción de Mascotas (Laravel)</h3>
+        <p>Plataforma para publicar y adoptar mascotas.</p>
+        <a href="https://gitlab.com/sebas66-group/adopcionmascotas/-/tree/master?ref_type=heads" target="_blank">Ver repositorio</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Email:</strong> jonathan.castro3598@utc.edu.ec</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sebastian - Portafolio </p>
+  </footer>
+</body>
+</html>
